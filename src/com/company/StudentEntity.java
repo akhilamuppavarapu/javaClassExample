@@ -10,6 +10,12 @@ public class StudentEntity {
 
     }
 
+    public StudentEntity(String studentId, String firstName, String lastName) {
+        this.studentId = studentId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public String getStudentId() {
         return studentId;
     }
@@ -32,5 +38,15 @@ public class StudentEntity {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+
+    @Override
+    public String toString() {
+        return "StudentEntity{" +
+                "studentId='" + studentId + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
